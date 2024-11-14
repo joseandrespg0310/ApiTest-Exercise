@@ -20,7 +20,7 @@ def test_verify_name():
     
 def test_verify_ingredient_tequila():
     esperado = "Tequila"
-    actual = response.json()["drinks"][0]["strIngredient1"]  # Asegúrate de que este índice sea correcto
+    actual = response.json()["drinks"][0]["strIngredient1"] 
     assert esperado == actual, f"FAIL: actual:{actual}, esperado:{esperado}"
 
 
